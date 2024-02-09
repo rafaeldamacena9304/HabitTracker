@@ -1,0 +1,149 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  display: flex;
+  background: #000;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.header,
+.main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease-in-out;
+}
+
+.header__link:hover {
+  color: #f9dba0;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* The form class is used for the form where new habits are added. It's not for 
+all form elements */
+.form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.1rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  resize: none;
+  border: 3px solid #000;
+  border-radius: 6px;
+  background: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.form__button {
+  font-size: inherit;
+  background: #f9dba0;
+  cursor: pointer;
+  border-radius: 6px;
+  padding: 0.5rem 2.5rem;
+  align-self: flex-end;
+  border: none;
+}
+.dates{
+  display:flex;
+  justify-content: space-around;
+  margin-bottom:30px;
+  font-family:inherit;
+  color: black;
+  font-size: 1.1rem;
+  align-items: center;
+}
+
+.dates__link{
+  color:inherit;
+  text-decoration:none;
+  padding-left:1rem;
+  padding-right:2.25rem;
+  outline:none;
+  border-radius:6px;
+  transition: all 0.3s ease-in-out;
+}
+.dates__link--current{
+  background-color:#f9dba0;
+  transition: all 0.3s ease-in-out;
+}
+.date{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.dates__link--current:hover{
+  background-color:#d4b16b;
+}
+.dates__link:not(.dates__link--current):hover{
+  background-color:rgb(196, 196, 196);
+}
+.habit{
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content: space-between;
+  font-size:20px;
+  background-color:#f9dba0;
+  border: 3px solid black;
+  border-radius:6px;
+}
+.habit:not(.completed){
+  padding:0;
+}
+.habit{
+  padding-left:15px;
+  padding-right:15px;
+  height:60px;
+  margin-bottom:1px;
+}
+.habitIcon{
+  margin-right:15px;
+}
+.habitName{
+  margin-left:15px;
+}
+.habit__button{
+  display:block;
+  width: 100%;
+  height:100%;
+  text-align:left;
+  font-size:inherit;
+  font-family:inherit;
+  border:none;
+  background-color: unset;
+  padding-left:15px;
+}
+.habit__form{
+  width: 100%;
+  height:100%;
+}
+.habit__button:hover{
+  background-color:#d4b16b;
+  cursor:pointer;
+}
